@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
       @font-face {
         font-family: Iosevka;
@@ -10,46 +12,58 @@
       body {
         font-family: Iosevka, monospace;
       }
+      .container {
+        margin: 0 auto;
+        max-width: 600px;
+      }
       a {
         color: #048;
         text-decoration: none;
       }
       ul {
         list-style-type: none;
+        margin-top: 24px;
       }
     </style>
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-oi8o31xSQq8S0RpBcb4FaLB8LJi9AT8oIdmS1QldR8Ui7KUQjNAnDlJjp55Ba8FG" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
   </head>
   <body>
-    <ul class="fa-ul">
-      <li><strong>Dustin Swan</strong></li>
-      <li title="Physical location"><span class="fa-li"><i class="fal fa-map-marker"></i></span><a href="https://www.openstreetmap.org/#map=19/42.73122/-73.69018">Troy, NY</a></li>
-      <li title="Email"><span class="fa-li"><i class="fal fa-envelope"></i></span><a href="mailto:dustin@dustinswan.com">dustin@dustinswan.com</a></li>
-      <li title="PGP"><span class="fa-li"><i class="fal fa-lock"></i></span><a href="https://pgp.mit.edu/pks/lookup?op=get&search=0xAB49BD6B2B3A6377">0xab49bd6b2b3a6377</a></li>
-      <li title="IRC"><span class="fa-li"><i class="fal fa-hashtag"></i></span><a href="irc://freenode.net/sw4n,isnick">sw4n on freenode</a></li>
-      <li title="Radio"><span class="fa-li"><i class="fal fa-broadcast-tower"></i></span>KD2PWP</li>
-      <li title="Keybase"><span class="fa-li"><i class="fab fa-keybase"></i></span><a href="https://keybase.io/dustinswan">keybase.io/dustinswan</a></li>
-      <li title="Mastodon"><span class="fa-li"><i class="fab fa-mastodon"></i></span><a href="https://mastodon.social/@dustinswan">mastodon.social/@dustinswan</a></li>
-      <li title="Twitter"><span class="fa-li"><i class="fab fa-twitter"></i></span><a href="https://twitter.com/dustinswan">twitter.com/dustinswan</a></li>
-      <li title="Instagram"><span class="fa-li"><i class="fab fa-instagram"></i></span><a href="http://instagram.com/dustinswan">instagram.com/dustinswan</a></li>
-      <li title="Tumblr"><span class="fa-li"><i class="fab fa-tumblr"></i></span><a href="http://dustinswan.tumblr.com">dustinswan.tumblr.com</a></li>
-      <li title="Github"><span class="fa-li"><i class="fab fa-github"></i></span><a href="http://github.com/dustinswan">github.com/dustinswan</a></li>
-      <li title="Goodreads"><span class="fa-li"><i class="fab fa-goodreads-g"></i></span><a href="http://goodreads.com/dustinswan">goodreads.com/dustinswan</a></li>
-    </ul>
+    <div class="container">
 
-    <ul class="fa-ul">
-      <li><span class="fa-li">Ⓐ</span>decentralization & crypto-anarchism</li>
-      <li><span class="fa-li">λ</span>functional programming & types</li>
-      <li><span class="fa-li"><i class="fal fa-terminal"></i></span>Emacs & org-mode</li>
-      <li><span class="fa-li"><i class="fal fa-motorcycle"></i></span>motorcycles & bicycles</li>
-      <li><span class="fa-li"><i class="fal fa-music"></i></span>piano</li>
-      <li><span class="fa-li"><i class="fal fa-language"></i></span>languages</li>
-      <li><span class="fa-li"><i class="fal fa-chess-knight"></i></span>games</li>
-      <li><span class="fa-li"><i class="fal fa-book"></i></span>books</li>
-      <li><span class="fa-li"><i class="fal fa-globe"></i></span>travel</li>
-      <li><span class="fa-li"><i class="fal fa-hand-paper"></i></span>climbing</li>
-      <li><span class="fa-li"><i class="fal fa-cube"></i></span>speedcubing</li>
-    </ul>
+      <ul class="fa-ul">
+        <li>Hello, I'm <strong>Dustin Swan</strong>.</li>
+      </ul>
+
+      <ul>
+        <li>I live on a <a href="https://rockwall-farm.com">horse farm</a> in upstate New York with my wife, Melissa.</li>
+        <li>Before this, we lived in New Mexico &amp; Chicago.</li>
+        <li>I work at <a href="https://visionable.com">Visionable</a> writing front-end code.</li>
+      </ul>
+
+      <ul class="fa-ul">
+        <li title="Email"><span class="fa-li"><i class="fal fa-envelope"></i></span><a href="mailto:dustin@dustinswan.com">dustin@dustinswan.com</a></li>
+        <li title="PGP"><span class="fa-li"><i class="fal fa-lock"></i></span><a href="https://pgp.key-server.io/pks/lookup?op=get&fingerprint=on&search=0xAB49BD6B2B3A6377">0xab49bd6b2b3a6377</a></li>
+        <li title="IRC"><span class="fa-li"><i class="fal fa-hashtag"></i></span><a href="irc://freenode.net/sw4n,isnick">sw4n on freenode</a></li>
+        <li title="Radio"><span class="fa-li"><i class="fal fa-broadcast-tower"></i></span>KD2PWP</li>
+        <li title="Keybase"><span class="fa-li"><i class="fab fa-keybase"></i></span><a href="https://keybase.io/dustinswan">keybase.io/dustinswan</a></li>
+        <li title="Mastodon"><span class="fa-li"><i class="fab fa-mastodon"></i></span><a href="https://mastodon.social/@dustinswan">mastodon.social/@dustinswan</a></li>
+        <li title="Twitter"><span class="fa-li"><i class="fab fa-twitter"></i></span><a href="https://twitter.com/dustinswan">twitter.com/dustinswan</a></li>
+        <li title="Instagram"><span class="fa-li"><i class="fab fa-instagram"></i></span><a href="http://instagram.com/dustinswan">instagram.com/dustinswan</a></li>
+        <li title="Tumblr"><span class="fa-li"><i class="fab fa-tumblr"></i></span><a href="http://dustinswan.tumblr.com">dustinswan.tumblr.com</a></li>
+        <li title="Github"><span class="fa-li"><i class="fab fa-github"></i></span><a href="http://github.com/dustinswan">github.com/dustinswan</a></li>
+        <li title="Goodreads"><span class="fa-li"><i class="fab fa-goodreads-g"></i></span><a href="http://goodreads.com/dustinswan">goodreads.com/dustinswan</a></li>
+      </ul>
+
+      <ul class="fa-ul">
+        <li><span class="fa-li"><i class="fas fa-flag"></i></span>decentralization, crypto-*, &amp;c.</li>
+        <li><span class="fa-li"><i class="fal fa-terminal"></i></span>plain text, Emacs, org-mode, NixOS, &amp;c.</li>
+        <li><span class="fa-li"><i class="fal fa-lambda"></i></span>strong types, pure functions, &amp;c.</li>
+        <li><span class="fa-li"><i class="fal fa-recycle"></i></span>minimalism; low-power, low-waste, low-car, &amp;c.</li>
+        <li><span class="fa-li"><i class="fal fa-piano"></i></span>playing piano; Chopin, Bach, Grieg, &amp;c.</li>
+        <li><span class="fa-li"><i class="fal fa-language"></i></span>learning languages; French, 日本語, 中文, &amp;c.</li>
+        <li><span class="fa-li"><i class="fal fa-ellipsis-h"></i></span>climbing, travel, saving, motorcycles, bicycles, books, chess, speedcubing, sailing, making lists, &amp;c.</li>
+      </ul>
+    </div>
   </body>
 </html>
