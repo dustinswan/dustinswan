@@ -7,61 +7,73 @@
     <style>
       @font-face {
         font-family: Iosevka;
-        src: url('iosevka-light.woff2') format('woff2');
+        src: url("iosevka-fixed-regular.woff2") format("woff2");
       }
       body {
         font-family: Iosevka, monospace;
+        background: #eceff4;
+        color: #2e3440;
       }
       .container {
         margin: 0 auto;
         max-width: 600px;
       }
-      p {
-        margin: 0;
-      }
       a {
-        color: #048;
+        color: #5e81ac;
         text-decoration: none;
       }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: #2e3440;
+          color: #eceff4;
+        }
+        a {
+          color: #81a1c1;
+        }
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li span {
+        display: inline-block;
+        text-align: center;
+        width: 16px;
+      }
     </style>
-
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
   </head>
 
   <body>
     <div class="container">
       <h3>Hello, I'm <strong>Dustin Swan</strong>.</h3>
 
-      <p>I live on a <a href="https://rockwall-farm.com">horse farm</a> in upstate New York with my wife, Melissa.</p>
+      <p>I live on a <a href="https://rockwall-farm.com">horse farm</a> in upstate New York with my wife, Melissa.
+      <br />Before this, we lived in New Mexico &amp; Chicago.</p>
 
-      <p>Before this, we lived in New Mexico &amp; Chicago.</p>
-
-      <p>I work at <a href="https://visionable.com">Visionable</a> writing front-end code.</p>
+      <p>I write code at <a href="https://visionable.com">Visionable</a>.</p>
 
       <h4>Elsewhere</h4>
 
-      <ul class="fa-ul">
-        <li title="Email"><span class="fa-li"><i class="fal fa-envelope"></i></span><a href="mailto:dustin@dustinswan.com">dustin@dustinswan.com</a></li>
-        <li title="PGP"><span class="fa-li"><i class="fal fa-lock"></i></span><a href="https://pgp.key-server.io/pks/lookup?op=get&fingerprint=on&search=0xAB49BD6B2B3A6377">0xab49bd6b2b3a6377</a></li>
-        <li title="IRC"><span class="fa-li"><i class="fal fa-hashtag"></i></span><a href="irc://freenode.net/sw4n,isnick">sw4n on freenode</a></li>
-        <li title="Radio"><span class="fa-li"><i class="fal fa-broadcast-tower"></i></span>KD2PWP</li>
-        <li title="Keybase"><span class="fa-li"><i class="fab fa-keybase"></i></span><a href="https://keybase.io/dustinswan">keybase.io/dustinswan</a></li>
-        <li title="Mastodon"><span class="fa-li"><i class="fab fa-mastodon"></i></span><a href="https://mastodon.social/@dustinswan">mastodon.social/@dustinswan</a></li>
-        <li title="Twitter"><span class="fa-li"><i class="fab fa-twitter"></i></span><a href="https://twitter.com/dustinswan">twitter.com/dustinswan</a></li>
-        <li title="Instagram"><span class="fa-li"><i class="fab fa-instagram"></i></span><a href="http://instagram.com/dustinswan">instagram.com/dustinswan</a></li>
-        <li title="Tumblr"><span class="fa-li"><i class="fab fa-tumblr"></i></span><a href="http://dustinswan.tumblr.com">dustinswan.tumblr.com</a></li>
-        <li title="Github"><span class="fa-li"><i class="fab fa-github"></i></span><a href="http://github.com/dustinswan">github.com/dustinswan</a></li>
-        <li title="Goodreads"><span class="fa-li"><i class="fab fa-goodreads-g"></i></span><a href="http://goodreads.com/dustinswan">goodreads.com/dustinswan</a></li>
+      <ul>
+        <li title="Email"><span>⍐</span> <a href="mailto:dustin@dustinswan.com">dustin@dustinswan.com</a></li>
+        <li title="PGP"><span></span> <a href="https://pgp.key-server.io/pks/lookup?op=get&fingerprint=on&search=0xAB49BD6B2B3A6377">0xab49bd6b2b3a6377</a></li>
+        <li title="Mastodon"><span>ɱ</span> <a href="https://mastodon.social/@dustinswan">mastodon.social/@dustinswan</a></li>
+        <li title="Twitter"><span>@</span> <a href="https://twitter.com/dustinswan">twitter.com/dustinswan</a></li>
+        <li title="Instagram"><span>⨀</span> <a href="http://instagram.com/dustinswan">instagram.com/dustinswan</a></li>
+        <li title="Git"><span></span> <a href="http://git.dustinswan.com">git.dustinswan.com</a></li>
+        <li title="Goodreads"><span>ɡ</span> <a href="http://goodreads.com/dustinswan">goodreads.com/dustinswan</a></li>
+        <li title="IRC"><span>♯</span> sw4n</li>
+        <li title="Ham"><span>Ω</span> KD2PWP</li>
       </ul>
 
       <h4>Interests</h4>
 
-      <ul class="fa-ul">
-        <li><span class="fa-li"><i class="fas fa-flag"></i></span>decentralization, crypto-*, &amp;c.</li>
-        <li><span class="fa-li"><i class="fal fa-lambda"></i></span>strong types, pure functions, &amp;c.</li>
-        <li><span class="fa-li"><i class="fal fa-terminal"></i></span>plain text, Emacs, org-mode, NixOS, &amp;c.</li>
-        <li><span class="fa-li"><i class="fal fa-recycle"></i></span>minimalism; low-power, low-waste, low-car, &amp;c.</li>
-        <li><span class="fa-li"><i class="fal fa-ellipsis-h"></i></span>piano, languages, climbing, travel, saving, motorcycles, bicycles, books, chess, speedcubing, sailing, making lists, &amp;c.</li>
+      <ul>
+        <li><span>⚑</span> decentralization, crypto-*, &amp;c.</li>
+        <li><span>λ</span> strong types, pure functions, &amp;c.</li>
+        <li><span>※</span> plain text, Emacs, org-mode, NixOS, &amp;c.</li>
+        <li><span>∈</span> minimalism; low-power, low-waste, low-car, &amp;c.</li>
+        <li><span>⋯</span> piano, languages, climbing, travel, saving, motorcycles, bicycles, books, chess, speedcubing, sailing, making lists, &amp;c.</li>
       </ul>
 
       <h4>Gift ideas</h4>
