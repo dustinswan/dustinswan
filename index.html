@@ -1,83 +1,382 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style>
-      @font-face {
-        font-family: Iosevka;
-        src: url("iosevka-fixed-regular.woff2") format("woff2");
-      }
-      body {
-        font-family: Iosevka, monospace;
-        background: #eceff4;
-        color: #2e3440;
-      }
-      .container {
-        margin: 0 auto;
-        max-width: 600px;
-      }
-      a {
-        color: #5e81ac;
-        text-decoration: none;
-      }
-      @media (prefers-color-scheme: dark) {
-        body {
-          background: #2e3440;
-          color: #eceff4;
-        }
-        a {
-          color: #81a1c1;
-        }
-      }
-      ul {
-        list-style-type: none;
-        padding: 0;
-      }
-      hr {
-        color: #eee;
-      }
-      ul.nowrap li {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-      }
-      li span {
-        display: inline-block;
-        text-align: center;
-        width: 16px;
-      }
-      small {
-        text-transform: uppercase;
-      }
-    </style>
-  </head>
+        <style>
+            @font-face {
+                font-family: Iosevka;
+                src: url("iosevka-fixed-regular.woff2") format("woff2");
+            }
+            body {
+                font-family: Iosevka, monospace;
+                background: #eceff4;
+                color: #2e3440;
+            }
+            .container {
+                margin: 0 auto;
+                max-width: 600px;
+            }
+            a {
+                color: #5e81ac;
+                text-decoration: none;
+            }
+            @media (prefers-color-scheme: dark) {
+                body {
+                    background: #2e3440;
+                    color: #eceff4;
+                }
+                a {
+                    color: #81a1c1;
+                }
+            }
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            li {
+                margin: 0.2rem;
+            }
+            ul.nowrap li {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            li span {
+                display: inline-block;
+                text-align: center;
+                width: 20px;
+            }
+        </style>
+    </head>
 
-  <body>
-    <div class="container">
-      <ul class="nowrap">
-        <li title="Email"><span>⍐</span> <a href="mailto:dustin@dustinswan.com">dustin@dustinswan.com</a></li>
-        <li title="Resume"><span>$</span> <a href="/resume">resume</a></li>
-        <li title="Nostr"><span>𓅦</span> <a href="https://primal.net/p/npub1jsmmzy38u28dxj5eu72fm6wz6txss7lt6ju0p2cpxvvp7jk0nnkqkjqd94">npub1jsmmzy38u28dxj5eu72fm6wz6txss7lt6ju0p2cpxvvp7jk0nnkqkjqd94</a></li>
-        <li title="Matrix"><span>⟧</span> <a href="https://matrix.to/#/@dustinswan:matrix.org">@dustinswan:matrix.org</a></li>
-        <li title="Mastodon"><span>ɱ</span> <a href="https://mastodon.social/@dustinswan" rel="me">mastodon.social/@dustinswan</a></li>
-        <li title="Twitter"><span>@</span> <a href="https://twitter.com/dustinswan">twitter.com/dustinswan</a></li>
-        <li title="Instagram"><span>⊙</span> <a href="http://instagram.com/dustinswan">instagram.com/dustinswan</a></li>
-        <li title="Git"><span></span> <a href="http://git.dustinswan.com/dustinswan">git.dustinswan.com</a></li>
-        <li title="Goodreads"><span>ɡ</span> <a href="http://goodreads.com/dustinswan">goodreads.com/dustinswan</a></li>
-        <li title="PGP"><span></span> <a href="https://pgp.mit.edu/pks/lookup?op=get&search=0xAB49BD6B2B3A6377">0xab49bd6b2b3a6377</a></li>
-        <li title="IRC"><span>♯</span> sw4n</li>
-        <li title="Ham"><span>Ω</span> KD2PWP</li>
-      </ul>
+    <body>
+        <div class="container">
+            <ul class="nowrap">
+                <li title="Email">
+                    <span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-mail"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
+                            />
+                            <path d="M3 7l9 6l9 -6" />
+                        </svg>
+                    </span>
+                    <a href="mailto:dustin@dustinswan.com">
+                        dustin@dustinswan.com
+                    </a>
+                </li>
 
-      <!--
-      <ul class="nowrap">
-        <li title="Web"><span>ʬ</span> <a href="https://dustinswan.com">https://dustinswan.com</a></li>
-        <li title="Ethereum"><span>⧫</span> <a href="https://dustinswan.eth">dustinswan.eth</a> <small>[<a href="https://app.ens.domains/name/dustinswan.eth">proxy</a>]</small></li>
-        <li title="Gemini"><span>Ѧ</span> <a href="gemini://dustinswan.com">gemini://dustinswan.com</a> <small>[<a href="https://proxy.vulpes.one/gemini/dustinswan.com">proxy</a>]</small></li>
-      </ul>
-      -->
-    </div>
-  </body>
+                <li title="Resume">
+                    <span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-file-cv"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                            <path
+                                d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"
+                            />
+                            <path
+                                d="M11 12.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0"
+                            />
+                            <path d="M13 11l1.5 6l1.5 -6" />
+                        </svg>
+                    </span>
+                    <a href="/resume">resume</a>
+                </li>
+
+                <li title="Nostr">
+                    <span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-transaction-bitcoin"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M15 12h4.09c1.055 0 1.91 .895 1.91 2s-.855 2 -1.91 2c1.055 0 1.91 .895 1.91 2s-.855 2 -1.91 2h-4.09"
+                            />
+                            <path d="M16 16h4" />
+                            <path d="M16 11v10v-9" />
+                            <path d="M19 11v1" />
+                            <path d="M19 20v1" />
+                            <path d="M5 5m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                            <path d="M17 5m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                            <path d="M7 5h8" />
+                            <path d="M7 5v8a3 3 0 0 0 3 3h1" />
+                        </svg>
+                    </span>
+                    <a
+                        href="https://primal.net/p/npub1jsmmzy38u28dxj5eu72fm6wz6txss7lt6ju0p2cpxvvp7jk0nnkqkjqd94"
+                    >
+                        npub1jsmmzy38u28dxj5eu72fm6wz6txss7lt6ju0p2cpxvvp7jk0nnkqkjqd94
+                    </a>
+                </li>
+                <li title="Matrix">
+                    <span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-matrix"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 3h-1v18h1" />
+                            <path d="M20 21h1v-18h-1" />
+                            <path d="M7 9v6" />
+                            <path d="M12 15v-3.5a2.5 2.5 0 1 0 -5 0v.5" />
+                            <path d="M17 15v-3.5a2.5 2.5 0 1 0 -5 0v.5" />
+                        </svg>
+                    </span>
+                    <a href="https://matrix.to/#/@dustinswan:matrix.org"
+                        >@dustinswan:matrix.org</a
+                    >
+                </li>
+                <li title="Mastodon">
+                    <span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-mastodon"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M18.648 15.254c-1.816 1.763 -6.648 1.626 -6.648 1.626a18.262 18.262 0 0 1 -3.288 -.256c1.127 1.985 4.12 2.81 8.982 2.475c-1.945 2.013 -13.598 5.257 -13.668 -7.636l-.026 -1.154c0 -3.036 .023 -4.115 1.352 -5.633c1.671 -1.91 6.648 -1.666 6.648 -1.666s4.977 -.243 6.648 1.667c1.329 1.518 1.352 2.597 1.352 5.633s-.456 4.074 -1.352 4.944z"
+                            />
+                            <path
+                                d="M12 11.204v-2.926c0 -1.258 -.895 -2.278 -2 -2.278s-2 1.02 -2 2.278v4.722m4 -4.722c0 -1.258 .895 -2.278 2 -2.278s2 1.02 2 2.278v4.722"
+                            />
+                        </svg>
+                    </span>
+                    <a href="https://mastodon.social/@dustinswan" rel="me"
+                        >mastodon.social/@dustinswan</a
+                    >
+                </li>
+                <li title="X">
+                    <span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                            <path
+                                d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"
+                            />
+                        </svg>
+                    </span>
+                    <a href="https://x.com/dustinswan">x.com/dustinswan</a>
+                </li>
+                <li title="Instagram">
+                    <span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+                            />
+                            <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                            <path d="M16.5 7.5v.01" />
+                        </svg>
+                    </span>
+                    <a href="http://instagram.com/dustinswan"
+                        >instagram.com/dustinswan</a
+                    >
+                </li>
+                <li title="Git">
+                    <span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-git-branch"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                            <path d="M7 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                            <path d="M17 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                            <path d="M7 8l0 8" />
+                            <path d="M9 18h6a2 2 0 0 0 2 -2v-5" />
+                            <path d="M14 14l3 -3l3 3" />
+                        </svg>
+                    </span>
+                    <a href="http://git.dustinswan.com/dustinswan"
+                        >git.dustinswan.com</a
+                    >
+                </li>
+                <li title="Goodreads">
+                    <span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-book"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                            <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                            <path d="M3 6l0 13" />
+                            <path d="M12 6l0 13" />
+                            <path d="M21 6l0 13" />
+                        </svg>
+                    </span>
+                    <a href="http://goodreads.com/dustinswan">
+                        goodreads.com/dustinswan
+                    </a>
+                </li>
+                <li title="PGP">
+                    <span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-lock"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z"
+                            />
+                            <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+                            <path d="M8 11v-4a4 4 0 1 1 8 0v4" />
+                        </svg>
+                    </span>
+                    <a
+                        href="https://pgp.mit.edu/pks/lookup?op=get&search=0xAB49BD6B2B3A6377"
+                        >0xab49bd6b2b3a6377</a
+                    >
+                </li>
+                <li title="IRC">
+                    <span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-hash"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M5 9l14 0" />
+                            <path d="M5 15l14 0" />
+                            <path d="M11 4l-4 16" />
+                            <path d="M17 4l-4 16" />
+                        </svg>
+                    </span>
+
+                    <a href="https://libera.chat">sw4n</a>
+                </li>
+
+                <li title="Ham">
+                    <span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-building-broadcast-tower"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"
+                            />
+                            <path d="M16.616 13.924a5 5 0 1 0 -9.23 0" />
+                            <path d="M20.307 15.469a9 9 0 1 0 -16.615 0" />
+                            <path d="M9 21l3 -9l3 9" />
+                            <path d="M10 19h4" />
+                        </svg>
+                    </span>
+
+                    KD2PWP
+                </li>
+            </ul>
+        </div>
+    </body>
 </html>
