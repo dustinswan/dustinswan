@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CG privacy</title>
+        <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦢</text></svg>"
+        />
+
+        <style>
+            @font-face {
+                font-family: Iosevka;
+                src: url("/iosevka-fixed-regular.woff2") format("woff2");
+                font-display: swap;
+            }
+            body {
+                font-family: Iosevka, monospace;
+                background: #eceff4;
+                color: #2e3440;
+                line-height: 1.5;
+            }
+            .container {
+                margin: 0 auto;
+                max-width: 600px;
+            }
+            a {
+                color: #5e81ac;
+                text-decoration: none;
+            }
+            @media (prefers-color-scheme: dark) {
+                body {
+                    background: #2e3440;
+                    color: #eceff4;
+                }
+                a {
+                    color: #81a1c1;
+                }
+            }
+            h1 {
+                font-size: 1rem;
+                font-weight: normal;
+                margin: 0.2rem;
+            }
+            p {
+                margin: 1rem 0.2rem;
+            }
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            li {
+                margin: 0.2rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>CG privacy</h1>
+
+            <p>
+                CG is a personal program that runs on my own computer. I am its
+                only user. This page says what it does with data from Google.
+            </p>
+
+            <p>
+                What it reads: with my permission, CG reads the events on my
+                Google calendars (titles, times, places). It asks for read-only
+                access and cannot create, change or delete anything.
+            </p>
+
+            <p>
+                Where it goes: the events are kept on my computer so the
+                calendar can draw them. They are not sent to any server, not
+                shared with anyone, not sold, and not used for advertising or
+                to train anything.
+            </p>
+
+            <p>
+                How long: the copy on my computer is replaced each time the
+                calendar refreshes. Removing CG's access in my Google account
+                settings stops it reading, and the local copy can be deleted
+                at any time.
+            </p>
+
+            <p>
+                Questions:
+                <a href="mailto:dustin@dustinswan.com">dustin@dustinswan.com</a>
+            </p>
+
+            <ul>
+                <li><a href="/cg">CG</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
